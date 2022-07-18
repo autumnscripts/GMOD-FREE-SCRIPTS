@@ -8,6 +8,7 @@ A bunch of free quality-of-life scripts, coded by me. Feel free to use any of th
 #### DARKRP MONEY TRANSFER - `A simple library for the DarkRP gamemode to transfer money directly from Person A to Person B.`
 #### HEALTH ARMOR REGENERATION - `A simple system which allows for passive (non-combat) regeneration of health & armor.`
 #### SIMPLE MAP ROTATION - `A simple system which changes to a new map every x amount of seconds.`
+#### SIMPLE PLAYER QUERY - `A simple command that allows administrators to query & view detailed info about a specific player.`
 
 
 ## IMPORTANT NOTE
