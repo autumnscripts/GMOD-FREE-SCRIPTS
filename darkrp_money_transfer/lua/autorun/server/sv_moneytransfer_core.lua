@@ -6,10 +6,10 @@ function meta:TransferMoney(target, amount)
     if not self:canAfford(amount) then DarkRP.notify(self, 1, 3, "You cannot afford to transfer " .. DarkRP.formatMoney(amount) .. ".") return end -- If the person cannot afford to pay
 
     -- Take away money and notify sender
-    self:AddMoney( -math.abs(amount) )
+    self:addMoney( -math.abs(amount) )
     DarkRP.notify(self, 3, 5, "You have transferred " .. DarkRP.formatMoney(amount) .. " to " .. target:Nick() .. ".")
 
     -- Add money and notify receiver
-    target:AddMoney(amount)
+    target:addMoney( math.abs(amount) )
     DarkRP.notify(target, 3, 5, self:Nick() .. " has transferred " .. DarkRP.formatMoney(amount) .. " to you.")
 end
