@@ -5,11 +5,9 @@ timer.Create("AthenaMapRotation.RotationTimer", AthenaMapRotation.Config.Rotatio
 
     local curMap = game.GetMap() -- Get our current map
     local curIndex = table.KeyFromValue(simulateMaps, curMap) -- Find our current map in our cloned list.
-
     table.remove(simulateMaps, curIndex) -- Remove our current map, we don't want to switch to that.
 
     local newMap = simulateMaps[ math.random( #simulateMaps ) ] -- Pick a random map, minus our current map.
-
     RunConsoleCommand("changelevel", newMap) -- Change to our new map :)
 
     timer.Remove("AthenaMapRotation.RotationTimer") -- Get rid of our timer, we don't need you anymore.
